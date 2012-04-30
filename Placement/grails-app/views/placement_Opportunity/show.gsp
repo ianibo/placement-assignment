@@ -54,7 +54,7 @@
 				<li class="fieldcontain">
 					<span id="status-label" class="property-label"><g:message code="placement_Opportunity.status.label" default="Status" /></span>
 					
-						<span class="property-value" aria-labelledby="status-label"><g:fieldValue bean="${placement_OpportunityInstance}" field="status"/></span>
+						<span class="property-value" aria-labelledby="status-label"><g:link controller="status" action="show" id="${placement_OpportunityInstance?.status?.id}">${placement_OpportunityInstance?.status?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

@@ -30,7 +30,7 @@
 					
 						<g:sortableColumn property="jobtitle" title="${message(code: 'placement_Opportunity.jobtitle.label', default: 'Jobtitle')}" />
 					
-						<g:sortableColumn property="status" title="${message(code: 'placement_Opportunity.status.label', default: 'Status')}" />
+						<th><g:message code="placement_Opportunity.status.label" default="Status" /></th>
 					
 					</tr>
 				</thead>

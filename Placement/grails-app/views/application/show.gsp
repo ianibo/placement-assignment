@@ -23,6 +23,42 @@
 			</g:if>
 			<ol class="property-list application">
 			
+				<g:if test="${applicationInstance?.code}">
+				<li class="fieldcontain">
+					<span id="code-label" class="property-label"><g:message code="application.code.label" default="Code" /></span>
+					
+						<span class="property-value" aria-labelledby="code-label"><g:fieldValue bean="${applicationInstance}" field="code"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${applicationInstance?.description}">
+				<li class="fieldcontain">
+					<span id="description-label" class="property-label"><g:message code="application.description.label" default="Description" /></span>
+					
+						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${applicationInstance}" field="description"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${applicationInstance?.placement_opportunities}">
+				<li class="fieldcontain">
+					<span id="placement_opportunities-label" class="property-label"><g:message code="application.placement_opportunities.label" default="Placementopportunities" /></span>
+					
+						<span class="property-value" aria-labelledby="placement_opportunities-label"><g:fieldValue bean="${applicationInstance}" field="placement_opportunities"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${applicationInstance?.students}">
+				<li class="fieldcontain">
+					<span id="students-label" class="property-label"><g:message code="application.students.label" default="Students" /></span>
+					
+						<span class="property-value" aria-labelledby="students-label"><g:fieldValue bean="${applicationInstance}" field="students"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">

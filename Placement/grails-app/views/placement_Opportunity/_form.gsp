@@ -26,11 +26,11 @@
 	<g:textField name="jobtitle" value="${placement_OpportunityInstance?.jobtitle}"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: placement_OpportunityInstance, field: 'status', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: placement_OpportunityInstance, field: 'status', 'error')} required">
 	<label for="status">
 		<g:message code="placement_Opportunity.status.label" default="Status" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="status" value="${placement_OpportunityInstance?.status}"/>
+	<g:select id="status" name="status.id" from="${placement.Status.list()}" optionKey="id" required="" value="${placement_OpportunityInstance?.status?.id}" class="many-to-one"/>
 </div>
 
